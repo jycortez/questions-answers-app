@@ -24,8 +24,8 @@ Partial Class welcome
     Private Sub InitializeComponent()
         Me.welcomeMenuStrip = New System.Windows.Forms.MenuStrip()
         Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.CreateQuestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.welcomeMenuStrip.SuspendLayout()
         CType(Me.dgvQuestions, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,6 +45,12 @@ Partial Class welcome
         Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(140, 20)
         Me.LoadToolStripMenuItem.Text = "Load Recent Questions"
         '
+        'CreateQuestionToolStripMenuItem
+        '
+        Me.CreateQuestionToolStripMenuItem.Name = "CreateQuestionToolStripMenuItem"
+        Me.CreateQuestionToolStripMenuItem.Size = New System.Drawing.Size(104, 20)
+        Me.CreateQuestionToolStripMenuItem.Text = "Create Question"
+        '
         'dgvQuestions
         '
         Me.dgvQuestions.AllowUserToAddRows = False
@@ -57,12 +63,6 @@ Partial Class welcome
         Me.dgvQuestions.ReadOnly = True
         Me.dgvQuestions.Size = New System.Drawing.Size(1014, 586)
         Me.dgvQuestions.TabIndex = 1
-        '
-        'CreateQuestionToolStripMenuItem
-        '
-        Me.CreateQuestionToolStripMenuItem.Name = "CreateQuestionToolStripMenuItem"
-        Me.CreateQuestionToolStripMenuItem.Size = New System.Drawing.Size(104, 20)
-        Me.CreateQuestionToolStripMenuItem.Text = "Create Question"
         '
         'welcome
         '
