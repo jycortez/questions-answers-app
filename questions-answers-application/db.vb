@@ -17,6 +17,11 @@ Public Class db
         End Set
     End Property
 
+    ' bind sql parameters
+    Public Sub bind(ByVal parameter As String, ByRef value As Object)
+        command.Parameters.AddWithValue(parameter, value)
+    End Sub
+
     ' populate a data grid view
     Public Sub fill(ByRef dgv As DataGridView)
         Dim adapter As SqlDataAdapter
@@ -41,18 +46,11 @@ Public Class db
         End Try
     End Sub
 
-    ' bind sql parameters
-    Public Sub bind(ByVal parameter As String, ByRef value As Object)
-        command.Parameters.AddWithValue(parameter, value)
-    End Sub
-
-    ' execute dml statement
+    ' execute a DML statement
     Public Sub execute()
-
         Try
             connection.Open()
             command.ExecuteNonQuery()
-
         Catch ex As Exception
             MsgBox(ex.Message)
             Throw ex
