@@ -5,6 +5,8 @@ Public Class welcome
         db.sql = "SELECT * FROM questions ORDER BY created_at DESC;"
         db.fill(dgvQuestions)
     End Sub
+
+
     Private Sub LoadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadToolStripMenuItem.Click
         LoadQuestions()
     End Sub
@@ -46,5 +48,11 @@ Public Class welcome
     Private Sub ShowAnswersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowAnswersToolStripMenuItem.Click
         Dim answersForm As New AnswersForm(getQuestionId())
         answersForm.ShowDialog()
+    End Sub
+
+
+    Private Sub AnswerQuestionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnswerQuestionToolStripMenuItem.Click
+        AnswerQuestion.ShowDialog()
+        LoadQuestions()
     End Sub
 End Class

@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnswerQuestion.Designer.vb">
+      <DependentUpon>AnswerQuestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnswerQuestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AnswersForm.Designer.vb">
       <DependentUpon>AnswersForm.vb</DependentUpon>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AnswerQuestion.resx">
+      <DependentUpon>AnswerQuestion.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnswersForm.resx">
       <DependentUpon>AnswersForm.vb</DependentUpon>
     </EmbeddedResource>
