@@ -15,4 +15,12 @@
         db.bind("@question_id", question_id)
         db.fill(dgvAnswers)
     End Sub
+
+    Private Sub LoadAnswersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoadAnswersToolStripMenuItem.Click
+        LoadAnswers()
+    End Sub
+
+    Private Sub AnswersForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadAnswers()
+    End Sub
 End Class
