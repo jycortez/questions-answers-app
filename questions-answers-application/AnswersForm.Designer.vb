@@ -25,6 +25,8 @@ Partial Class AnswersForm
         Me.dgvAnswers = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.LoadAnswersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UpdateAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.dgvAnswers, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,7 +45,7 @@ Partial Class AnswersForm
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadAnswersToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadAnswersToolStripMenuItem, Me.UpdateAnswerToolStripMenuItem, Me.DeleteAnswerToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(932, 24)
@@ -55,6 +57,18 @@ Partial Class AnswersForm
         Me.LoadAnswersToolStripMenuItem.Name = "LoadAnswersToolStripMenuItem"
         Me.LoadAnswersToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
         Me.LoadAnswersToolStripMenuItem.Text = "Load Answers"
+        '
+        'UpdateAnswerToolStripMenuItem
+        '
+        Me.UpdateAnswerToolStripMenuItem.Name = "UpdateAnswerToolStripMenuItem"
+        Me.UpdateAnswerToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.UpdateAnswerToolStripMenuItem.Text = "Update Answer"
+        '
+        'DeleteAnswerToolStripMenuItem
+        '
+        Me.DeleteAnswerToolStripMenuItem.Name = "DeleteAnswerToolStripMenuItem"
+        Me.DeleteAnswerToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+        Me.DeleteAnswerToolStripMenuItem.Text = "Delete Answer"
         '
         'AnswersForm
         '
@@ -77,4 +91,6 @@ Partial Class AnswersForm
     Friend WithEvents dgvAnswers As DataGridView
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents LoadAnswersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UpdateAnswerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteAnswerToolStripMenuItem As ToolStripMenuItem
 End Class

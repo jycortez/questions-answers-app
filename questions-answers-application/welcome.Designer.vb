@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class welcome
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class welcome
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.welcomeMenuStrip = New System.Windows.Forms.MenuStrip()
         Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -28,17 +28,15 @@ Partial Class welcome
         Me.UpdateQuestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteQuestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowAnswersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.AnswerQuestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpdateAnswerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.welcomeMenuStrip.SuspendLayout()
         CType(Me.dgvQuestions, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'welcomeMenuStrip
         '
-        Me.welcomeMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadToolStripMenuItem, Me.CreateQuestionToolStripMenuItem, Me.UpdateQuestionToolStripMenuItem, Me.DeleteQuestionToolStripMenuItem, Me.ShowAnswersToolStripMenuItem, Me.AnswerQuestionToolStripMenuItem, Me.UpdateAnswerToolStripMenuItem, Me.DeleteAnswerToolStripMenuItem})
+        Me.welcomeMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadToolStripMenuItem, Me.CreateQuestionToolStripMenuItem, Me.UpdateQuestionToolStripMenuItem, Me.DeleteQuestionToolStripMenuItem, Me.ShowAnswersToolStripMenuItem, Me.AnswerQuestionToolStripMenuItem})
         Me.welcomeMenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.welcomeMenuStrip.Name = "welcomeMenuStrip"
         Me.welcomeMenuStrip.Size = New System.Drawing.Size(1014, 24)
@@ -75,6 +73,12 @@ Partial Class welcome
         Me.ShowAnswersToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
         Me.ShowAnswersToolStripMenuItem.Text = "Show Answers"
         '
+        'AnswerQuestionToolStripMenuItem
+        '
+        Me.AnswerQuestionToolStripMenuItem.Name = "AnswerQuestionToolStripMenuItem"
+        Me.AnswerQuestionToolStripMenuItem.Size = New System.Drawing.Size(109, 20)
+        Me.AnswerQuestionToolStripMenuItem.Text = "Answer Question"
+        '
         'dgvQuestions
         '
         Me.dgvQuestions.AllowUserToAddRows = False
@@ -87,24 +91,6 @@ Partial Class welcome
         Me.dgvQuestions.ReadOnly = True
         Me.dgvQuestions.Size = New System.Drawing.Size(1014, 586)
         Me.dgvQuestions.TabIndex = 1
-        '
-        'AnswerQuestionToolStripMenuItem
-        '
-        Me.AnswerQuestionToolStripMenuItem.Name = "AnswerQuestionToolStripMenuItem"
-        Me.AnswerQuestionToolStripMenuItem.Size = New System.Drawing.Size(109, 20)
-        Me.AnswerQuestionToolStripMenuItem.Text = "Answer Question"
-        '
-        'DeleteAnswerToolStripMenuItem
-        '
-        Me.DeleteAnswerToolStripMenuItem.Name = "DeleteAnswerToolStripMenuItem"
-        Me.DeleteAnswerToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
-        Me.DeleteAnswerToolStripMenuItem.Text = "Delete Answer"
-        '
-        'UpdateAnswerToolStripMenuItem
-        '
-        Me.UpdateAnswerToolStripMenuItem.Name = "UpdateAnswerToolStripMenuItem"
-        Me.UpdateAnswerToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
-        Me.UpdateAnswerToolStripMenuItem.Text = "Update Answer"
         '
         'welcome
         '
@@ -132,6 +118,4 @@ Partial Class welcome
     Friend WithEvents DeleteQuestionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ShowAnswersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AnswerQuestionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpdateAnswerToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DeleteAnswerToolStripMenuItem As ToolStripMenuItem
 End Class

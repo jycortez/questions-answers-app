@@ -1,6 +1,5 @@
 ﻿Public Class AnswerQuestion
     Protected db As db = New db
-    Dim qid As Integer
 
     Private Sub tbQid_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles tbQid.KeyPress
         If Asc(e.KeyChar) <> 13 AndAlso Asc(e.KeyChar) <> 8 AndAlso Not IsNumeric(e.KeyChar) Then
