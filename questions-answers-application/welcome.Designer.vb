@@ -29,6 +29,7 @@ Partial Class welcome
         Me.DeleteQuestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowAnswersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AnswerQuestionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ShowQuestionsWithAnswersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.dgvQuestions = New System.Windows.Forms.DataGridView()
         Me.welcomeMenuStrip.SuspendLayout()
         CType(Me.dgvQuestions, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -36,7 +37,7 @@ Partial Class welcome
         '
         'welcomeMenuStrip
         '
-        Me.welcomeMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadToolStripMenuItem, Me.CreateQuestionToolStripMenuItem, Me.UpdateQuestionToolStripMenuItem, Me.DeleteQuestionToolStripMenuItem, Me.ShowAnswersToolStripMenuItem, Me.AnswerQuestionToolStripMenuItem})
+        Me.welcomeMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LoadToolStripMenuItem, Me.CreateQuestionToolStripMenuItem, Me.UpdateQuestionToolStripMenuItem, Me.DeleteQuestionToolStripMenuItem, Me.ShowAnswersToolStripMenuItem, Me.AnswerQuestionToolStripMenuItem, Me.ShowQuestionsWithAnswersToolStripMenuItem})
         Me.welcomeMenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.welcomeMenuStrip.Name = "welcomeMenuStrip"
         Me.welcomeMenuStrip.Size = New System.Drawing.Size(1014, 24)
@@ -79,6 +80,12 @@ Partial Class welcome
         Me.AnswerQuestionToolStripMenuItem.Size = New System.Drawing.Size(109, 20)
         Me.AnswerQuestionToolStripMenuItem.Text = "Answer Question"
         '
+        'ShowQuestionsWithAnswersToolStripMenuItem
+        '
+        Me.ShowQuestionsWithAnswersToolStripMenuItem.Name = "ShowQuestionsWithAnswersToolStripMenuItem"
+        Me.ShowQuestionsWithAnswersToolStripMenuItem.Size = New System.Drawing.Size(177, 20)
+        Me.ShowQuestionsWithAnswersToolStripMenuItem.Text = "Show Questions with Answers"
+        '
         'dgvQuestions
         '
         Me.dgvQuestions.AllowUserToAddRows = False
@@ -118,4 +125,5 @@ Partial Class welcome
     Friend WithEvents DeleteQuestionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ShowAnswersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AnswerQuestionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ShowQuestionsWithAnswersToolStripMenuItem As ToolStripMenuItem
 End Class

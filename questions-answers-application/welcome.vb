@@ -55,4 +55,11 @@ Public Class welcome
         AnswerQuestion.ShowDialog()
         LoadQuestions()
     End Sub
+
+    Private Sub ShowQuestionsWithAnswersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowQuestionsWithAnswersToolStripMenuItem.Click
+        db.sql = "SELECT question, answer FROM questions JOIN answers
+ON questions.id = answers.id ORDER BY questions.id DESC;"
+        db.execute()
+        db.fill(dgvQuestions)
+    End Sub
 End Class
